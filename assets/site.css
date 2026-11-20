@@ -1,0 +1,22 @@
+html{-webkit-text-size-adjust:100%}
+.dla-menu{display:none}
+@media (max-width: 760px){
+  .dla-nav{padding:10px 20px !important;gap:10px 16px !important;flex-wrap:wrap !important}
+  .dla-nav > a:first-child img{height:76px !important}
+  .dla-menu{display:block;margin-left:auto;min-height:44px;padding:0 16px;border:1.5px solid #0A0F33;background:transparent;color:#0A0F33;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+  .dla-links{display:none !important;flex-direction:column !important;gap:0 !important;width:100%;order:3}
+  .dla-links a{padding:14px 0 !important;border-bottom:1px solid rgba(10,15,51,.15) !important;font-size:13px}
+  .dla-contact{display:none !important;order:4}
+  .dla-open .dla-links{display:flex !important}
+  .dla-open .dla-contact{display:block !important;width:100%;text-align:center;margin-bottom:8px}
+  #top > svg[aria-hidden="true"]{opacity:.22 !important}
+}
+
+/* Wide route drawings: keep them legible on phones by letting them scroll sideways */
+.dla-scroll{width:100%}
+@media (max-width: 760px){
+  .dla-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .dla-scroll::-webkit-scrollbar{display:none}
+  .dla-scroll svg[aria-label^="Map of DLA properties"]{min-width:760px}
+  .dla-scroll svg[aria-label^="Our business plan"]{min-width:820px}
+}
