@@ -130,7 +130,7 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 /* dla-cta-hover */ a[style*="background: #1FD38A"]:hover,button[style*="background: #1FD38A"]:hover{background:#3BE89E !important;color:#0A0F33 !important}
 </style>
 
-<link rel="stylesheet" href="/assets/site.css?v=202611222143">
+<link rel="stylesheet" href="/assets/site.css?v=202611222145">
 <style>#app:not([data-ready]){visibility:hidden}</style>
 </head>
 <body>
@@ -340,19 +340,15 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 </section>
 <footer style="background: #0A0F33; color: #F2EFE8; border-top: 1px solid #2A3166;">
 <div style="max-width: 1360px; margin: 0 auto; padding: 56px 32px 40px; display: flex; flex-direction: column; gap: 40px;">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 40px 64px;">
-<div style="position: relative; display: flex; flex-direction: column; gap: 22px; flex: 1 1 560px; max-width: 780px; box-sizing: border-box; padding: clamp(28px, 4vw, 52px); background: linear-gradient(140deg, #141C52 0%, #0D1442 100%); border: 1px solid #2A3166;">
-<span aria-hidden="true" style="position: absolute; top: -1px; left: -1px; width: 88px; height: 3px; background: #2E4BE0;"></span>
-<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8F96D1;">The DLA Essay · Weekly</p>
-<div style="display: flex; flex-direction: column; gap: 10px;">
-<p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 44px); line-height: 1.08; letter-spacing: -0.01em; color: #F2EFE8;">Get the weekly DLA essay.</p>
-<p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: clamp(18px, 1.4vw, 21px); line-height: 1.5; color: #C4C2D6;">Read by owners, brokers and investors across the Southeast.</p>
-</div>
+<div style="display: flex; flex-direction: column; gap: 28px; padding: clamp(24px, 4vw, 56px) 0 clamp(16px, 2vw, 24px);">
+<p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.8vw, 80px); line-height: 1.02; letter-spacing: -0.02em; color: #F2EFE8;">The weekly DLA essay, delivered to your inbox.</p>
+<p style="margin: 0; font-size: 20px; line-height: 1.5; color: #C4C2D6;">Read by owners, brokers and investors across the Southeast.</p>
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 1120px; margin-top: 8px;">
 <sc-if value="{{notSubscribed}}" hint-placeholder-val="{{true}}">
-<form onSubmit="{{subscribe}}" style="display: flex; flex-wrap: wrap; gap: 0; box-shadow: 0 18px 40px -24px rgba(0,0,0,0.6);"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<form onSubmit="{{subscribe}}" style="display: flex; flex-wrap: wrap; gap: 0; "><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <label for="ft-email-portfolio" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;">Email address</label>
-<input id="ft-email-portfolio" type="email" required placeholder="Add your email" style="flex: 999 1 260px; min-width: 0; height: 64px; box-sizing: border-box; padding: 0 24px; border: none; background: #FFFFFF; color: #0A0F33; font-family: 'Newsreader', Georgia, serif; font-size: 20px;">
-<button type="button" onClick="{{subscribe}}" style="flex: 1 0 170px; height: 64px; padding: 0 28px; border: none; background: #1FD38A; color: #0A0F33; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 17px; letter-spacing: 0.04em; cursor: pointer;">Subscribe</button>
+<input id="ft-email-portfolio" type="email" required placeholder="Add your email" style="flex: 999 1 260px; min-width: 0; height: 76px; box-sizing: border-box; padding: 0 24px; border: none; background: #FFFFFF; color: #0A0F33; font-family: 'Newsreader', Georgia, serif; font-size: 22px;">
+<button type="button" onClick="{{subscribe}}" style="flex: 1 0 240px; height: 76px; padding: 0 32px; border: none; background: #1FD38A; color: #0A0F33; font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 19px; letter-spacing: 0.06em; cursor: pointer;">Subscribe</button>
 </form>
 <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #8F96D1;">One essay a week. No spam. Unsubscribe anytime.</p>
 </sc-if>
@@ -363,12 +359,11 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 </div>
 </sc-if>
 </div>
-<a href="/contact/" style="text-decoration: none; color: #F2EFE8; border: 1.5px solid #F2EFE8; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; padding: 16.5px 24px;">Invest or send a deal →</a>
 </div>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; border-top: 1px solid #2A3166; padding-top: 28px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; line-height: 1.8; color: #B9B5AC;">
 <p style="margin: 0; display: flex; flex-direction: column;"><img src="/assets/dla-logo-white.png" alt="DLA Real Estate" style="display: block; align-self: flex-start; height: 60px; width: auto; max-width: none; margin-bottom: 18px;"><span>601 N Federal Hwy, Suite 301<br>Hallandale Beach, FL 33009</span></p>
 <p style="margin: 0; display: flex; flex-direction: column;"><a href="/essays/" style="color: #F2EFE8; text-decoration: none;">Essays</a><a href="/portfolio/" style="color: #F2EFE8; text-decoration: none;">Portfolio</a><a href="/criteria/" style="color: #F2EFE8; text-decoration: none;">Criteria</a><a href="/products/" style="color: #F2EFE8; text-decoration: none;">Products</a><a href="/about/" style="color: #F2EFE8; text-decoration: none;">About</a><a href="/investors/" style="color: #F2EFE8; text-decoration: none;">Investors</a></p>
-<p style="margin: 0;"><a href="mailto:daniel@dlare.co" style="color: #F2EFE8;">daniel@dlare.co</a><br><a href="tel:+17869718871" style="color: #F2EFE8;">+1 786 971 8871</a></p>
+<p style="margin: 0;"><a href="mailto:daniel@dlare.co" style="color: #F2EFE8;">daniel@dlare.co</a><br><a href="tel:+17869718871" style="color: #F2EFE8;">+1 786 971 8871</a><br><a href="/contact/" style="color: #1FD38A; text-decoration: none;">Invest or send a deal →</a></p>
 <p style="margin: 0;">© 2026 DLA Real Estate</p>
 </div>
 </div>
@@ -376,8 +371,8 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 </div>
 </template>
 <noscript><p style="font-family:sans-serif;padding:24px">This site needs JavaScript. Email <a href="mailto:daniel@dlare.co">daniel@dlare.co</a> or call +1 786 971 8871.</p></noscript>
-<script src="/assets/config.js?v=202611222143"></script>
-<script src="/assets/dc.js?v=202611222143"></script>
+<script src="/assets/config.js?v=202611222145"></script>
+<script src="/assets/dc.js?v=202611222145"></script>
 <script>
 class Component extends DCLogic {
 constructor(props) { super(props); this.state = { subscribed: false }; }
