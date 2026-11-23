@@ -32,3 +32,19 @@ html{-webkit-text-size-adjust:100%}
   p[style*="font-size: 20px"]:not([style*="JetBrains"]):not([style*="Archivo"]),li[style*="font-size: 20px"]:not([style*="JetBrains"]):not([style*="Archivo"]),dd[style*="font-size: 20px"]:not([style*="JetBrains"]):not([style*="Archivo"]),td[style*="font-size: 20px"]:not([style*="JetBrains"]):not([style*="Archivo"]),blockquote[style*="font-size: 20px"]:not([style*="JetBrains"]):not([style*="Archivo"]){font-size:22px !important}
   p[style*="font-size: 21px"]:not([style*="JetBrains"]):not([style*="Archivo"]),li[style*="font-size: 21px"]:not([style*="JetBrains"]):not([style*="Archivo"]),dd[style*="font-size: 21px"]:not([style*="JetBrains"]):not([style*="Archivo"]),td[style*="font-size: 21px"]:not([style*="JetBrains"]):not([style*="Archivo"]),blockquote[style*="font-size: 21px"]:not([style*="JetBrains"]):not([style*="Archivo"]){font-size:23px !important}
 }
+
+/* Laptop/desktop: larger header nav (phones unchanged) */
+@media (min-width: 1024px){
+  .dla-links{font-size:16px !important;gap:8px 22px !important}
+  .dla-contact{font-size:16px !important;padding:16px 24px !important}
+}
+@media (min-width: 1150px){
+  .dla-links{font-size:17px !important;gap:8px 30px !important}
+}
+@media (min-width: 1280px){
+  .dla-links{font-size:18px !important;gap:8px 40px !important}
+}
+@media (min-width: 1440px){
+  .dla-links{font-size:20px !important;gap:8px 48px !important}
+  .dla-contact{font-size:18px !important;padding:18px 28px !important}
+}
