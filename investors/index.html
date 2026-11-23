@@ -126,11 +126,17 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
   [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 66px"]{max-height:119px !important}
   [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 72px"]{max-height:130px !important}
 }
+/* Forms: bigger labels and fields on laptop/desktop */
+@media (min-width: 1024px){
+  label[style*="JetBrains"][style*="font-size: 11px"],legend[style*="JetBrains"][style*="font-size: 11px"]{font-size:15px !important;letter-spacing:0.14em !important}
+  input[style*="height: 52px"],select[style*="height: 52px"]{height:68px !important;font-size:24px !important;padding:0 20px !important}
+  textarea[style*="font-size: 18px"]{font-size:24px !important;padding:18px 20px !important;line-height:1.45 !important}
+}
 /* DESKTOP-END */
 /* dla-cta-hover */ a[style*="background: #1FD38A"]:hover,button[style*="background: #1FD38A"]:hover{background:#3BE89E !important;color:#0A0F33 !important}
 </style>
 
-<link rel="stylesheet" href="/assets/site.css?v=202611222145">
+<link rel="stylesheet" href="/assets/site.css?v=202611222146">
 <style>#app:not([data-ready]){visibility:hidden}</style>
 </head>
 <body>
@@ -323,8 +329,8 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 </div>
 </template>
 <noscript><p style="font-family:sans-serif;padding:24px">This site needs JavaScript. Email <a href="mailto:daniel@dlare.co">daniel@dlare.co</a> or call +1 786 971 8871.</p></noscript>
-<script src="/assets/config.js?v=202611222145"></script>
-<script src="/assets/dc.js?v=202611222145"></script>
+<script src="/assets/config.js?v=202611222146"></script>
+<script src="/assets/dc.js?v=202611222146"></script>
 <script>
 class Component extends DCLogic {
 constructor(props) { super(props); this.state = { subscribed: false }; }
