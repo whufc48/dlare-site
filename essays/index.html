@@ -137,11 +137,18 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
   div[style*="flex: 1 1 340px; min-width: 0"]{flex:0 0 min(580px,40%) !important}
   div[style*="linear-gradient(150deg, #141C52"]{padding:clamp(40px,3.6vw,60px) !important;gap:28px !important}
 }
+/* Criteria buy boxes: 2 x 2, bigger rows on laptop/desktop */
+@media (min-width: 1024px){
+  [style*="minmax(min(100%, 520px)"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:32px !important}
+  span[style*="font-size: 17px; color: #55524C; white-space: nowrap"]{font-size:21px !important}
+  span[style*="Archivo"][style*="font-size: 16px"][style*="text-align: right"]{font-size:20px !important}
+  div[style*="padding: 18px 28px; border-top: 1px solid #D6D0C2"]{padding:22px 36px !important}
+}
 /* DESKTOP-END */
 /* dla-cta-hover */ a[style*="background: #1FD38A"]:hover,button[style*="background: #1FD38A"]:hover{background:#3BE89E !important;color:#0A0F33 !important}
 </style>
 
-<link rel="stylesheet" href="/assets/site.css?v=202611222147">
+<link rel="stylesheet" href="/assets/site.css?v=202611222149">
 <style>#app:not([data-ready]){visibility:hidden}</style>
 </head>
 <body>
@@ -278,8 +285,8 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 </div>
 </template>
 <noscript><p style="font-family:sans-serif;padding:24px">This site needs JavaScript. Email <a href="mailto:daniel@dlare.co">daniel@dlare.co</a> or call +1 786 971 8871.</p></noscript>
-<script src="/assets/config.js?v=202611222147"></script>
-<script src="/assets/dc.js?v=202611222147"></script>
+<script src="/assets/config.js?v=202611222149"></script>
+<script src="/assets/dc.js?v=202611222149"></script>
 <script>
 class Component extends DCLogic {
 constructor(props) { super(props); this.state = { subscribed: false }; }
