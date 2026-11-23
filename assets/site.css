@@ -97,3 +97,11 @@ html{-webkit-text-size-adjust:100%}
   footer div[style*="border-top: 1px solid #2A3166"][style*="font-size: 12px"]{font-size:16px !important;line-height:1.9 !important;gap:32px !important;padding-top:40px !important}
   footer img[style*="height: 60px"]{height:84px !important}
 }
+
+/* Laptop/desktop polish: essay reading size, bolder stats, larger small labels (phones unchanged) */
+@media (min-width: 1024px){
+  p[style*="font-size: 20px; line-height: 1.7"][style*="color"]:not([style*="JetBrains"]):not([style*="Archivo"]){font-size:clamp(21px,1.67vw,24px) !important;line-height:1.6 !important}
+  p[style*="Archivo"][style*="font-size: 64px"]{font-size:clamp(48px,5.4vw,96px) !important}
+  p[style*="JetBrains"][style*="font-size: 11px"],span[style*="JetBrains"][style*="font-size: 11px"],li[style*="JetBrains"][style*="font-size: 11px"],
+  p[style*="JetBrains"][style*="font-size: 12px"],span[style*="JetBrains"][style*="font-size: 12px"],li[style*="JetBrains"][style*="font-size: 12px"]{font-size:14px !important}
+}
