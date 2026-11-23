@@ -105,3 +105,22 @@ html{-webkit-text-size-adjust:100%}
   p[style*="JetBrains"][style*="font-size: 11px"],span[style*="JetBrains"][style*="font-size: 11px"],li[style*="JetBrains"][style*="font-size: 11px"],
   p[style*="JetBrains"][style*="font-size: 12px"],span[style*="JetBrains"][style*="font-size: 12px"],li[style*="JetBrains"][style*="font-size: 12px"]{font-size:14px !important}
 }
+
+
+/* Laptop/desktop: partner logos 5 per row, ~1.8x bigger (phones unchanged) */
+@media (min-width: 1024px){
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"]{grid-template-columns:repeat(5,minmax(0,1fr)) !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] > div{min-height:190px !important;padding:28px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img{max-width:88% !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 30px"]{max-height:54px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 34px"]{max-height:61px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 36px"]{max-height:65px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 40px"]{max-height:72px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 44px"]{max-height:79px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 52px"]{max-height:94px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 56px"]{max-height:101px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 60px"]{max-height:108px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 64px"]{max-height:115px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 66px"]{max-height:119px !important}
+  [style*="minmax(min(100%, 200px)"][style*="border-left: 1px solid #2A3166"] img[style*="max-height: 72px"]{max-height:130px !important}
+}
