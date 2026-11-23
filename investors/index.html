@@ -129,7 +129,7 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 /* DESKTOP-END */
 </style>
 
-<link rel="stylesheet" href="/assets/site.css?v=202611222131">
+<link rel="stylesheet" href="/assets/site.css?v=202611222136">
 <style>#app:not([data-ready]){visibility:hidden}</style>
 </head>
 <body>
@@ -292,14 +292,20 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 <footer style="background: #0A0F33; color: #F2EFE8; border-top: 1px solid #2A3166;">
 <div style="max-width: 1360px; margin: 0 auto; padding: 56px 32px 40px; display: flex; flex-direction: column; gap: 40px;">
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 40px 64px;">
-<div style="display: flex; flex-direction: column; gap: 28px; max-width: 680px;">
-<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.6; color: #E6E3DC;">Get the weekly DLA essay, read by owners, brokers and investors across the Southeast.</p>
+<div style="position: relative; display: flex; flex-direction: column; gap: 22px; flex: 1 1 560px; max-width: 780px; box-sizing: border-box; padding: clamp(28px, 4vw, 52px); background: linear-gradient(140deg, #141C52 0%, #0D1442 100%); border: 1px solid #2A3166;">
+<span aria-hidden="true" style="position: absolute; top: -1px; left: -1px; width: 88px; height: 3px; background: #2E4BE0;"></span>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8F96D1;">The DLA Essay · Weekly</p>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 44px); line-height: 1.08; letter-spacing: -0.01em; color: #F2EFE8;">Get the weekly DLA essay.</p>
+<p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: clamp(18px, 1.4vw, 21px); line-height: 1.5; color: #C4C2D6;">Read by owners, brokers and investors across the Southeast.</p>
+</div>
 <sc-if value="{{notSubscribed}}" hint-placeholder-val="{{true}}">
-<form onSubmit="{{subscribe}}" style="display: flex; flex-wrap: wrap; gap: 12px;"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<form onSubmit="{{subscribe}}" style="display: flex; flex-wrap: wrap; gap: 0; box-shadow: 0 18px 40px -24px rgba(0,0,0,0.6);"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 <label for="ft-email-global" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;">Email address</label>
-<input id="ft-email-global" type="email" required placeholder="Add your email" style="flex: 1 1 260px; min-width: 0; height: 64px; box-sizing: border-box; padding: 0 24px; border: none; background: #FFFFFF; color: #0A0F33; font-family: 'Newsreader', Georgia, serif; font-size: 20px;">
-<button type="button" onClick="{{subscribe}}" style="height: 64px; padding: 0 28px; border: none; background: #2E4BE0; color: #FFFFFF; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 17px; letter-spacing: 0.04em; cursor: pointer;">Subscribe</button>
+<input id="ft-email-global" type="email" required placeholder="Add your email" style="flex: 999 1 260px; min-width: 0; height: 64px; box-sizing: border-box; padding: 0 24px; border: none; background: #FFFFFF; color: #0A0F33; font-family: 'Newsreader', Georgia, serif; font-size: 20px;">
+<button type="button" onClick="{{subscribe}}" style="flex: 1 0 170px; height: 64px; padding: 0 28px; border: none; background: #2E4BE0; color: #FFFFFF; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 17px; letter-spacing: 0.04em; cursor: pointer;">Subscribe</button>
 </form>
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #8F96D1;">One essay a week. No spam. Unsubscribe anytime.</p>
 </sc-if>
 <sc-if value="{{subscribed}}" hint-placeholder-val="{{false}}">
 <div role="status" style="display: flex; align-items: center; gap: 16px; min-height: 64px; box-sizing: border-box; padding: 16px 24px; border: 1.5px solid #F2EFE8; color: #F2EFE8;">
@@ -321,8 +327,8 @@ a{color:#0A0F33}a:hover{color:#2E4BE0}
 </div>
 </template>
 <noscript><p style="font-family:sans-serif;padding:24px">This site needs JavaScript. Email <a href="mailto:daniel@dlare.co">daniel@dlare.co</a> or call +1 786 971 8871.</p></noscript>
-<script src="/assets/config.js?v=202611222131"></script>
-<script src="/assets/dc.js?v=202611222131"></script>
+<script src="/assets/config.js?v=202611222136"></script>
+<script src="/assets/dc.js?v=202611222136"></script>
 <script>
 class Component extends DCLogic {
 constructor(props) { super(props); this.state = { subscribed: false }; }
